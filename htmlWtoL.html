@@ -6,13 +6,13 @@
     <title>Web To Lead From</title>
     <link rel="stylesheet" href="style.css">
     <script src="js0.js"></script>
-    <!--<script src="https://www.google.com/recaptcha/api.js"></script>-->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
         <h1>Create Lead</h1>
-        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DdL00000F5Ba5" method="POST" onsubmit=" beforeSubmit()">
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DdL00000F5Ba5" method="POST" onsubmit=" beforeSubmit(event)">
          
-     <!--   <input type=hidden name='captcha_settings' value='{"keyname":"WebToLead","fallback":"true","orgId":"00DdL00000F5Ba5","ts":""}'> -->
+        <input type=hidden name='captcha_settings' value='{"keyname":"WebToLead","fallback":"true","orgId":"00DdL00000F5Ba5","ts":""}'>
         <input type=hidden name="oid" value="00DdL00000F5Ba5">
         <input type=hidden name="retURL" value="https://shumath1234.github.io/Mini-Project-1-Web-To-Lead/HTML.HTML" />
         
@@ -30,12 +30,12 @@
         
         <input type="submit" name="submit" class="submit" /> 
 
-     <!--   <div 
+        <div 
         class="g-recaptcha" 
         data-call="captchaSuccess"
         data-sitekey="6LfsO-wqAAAAANQ-BxXmDSenmpblZV3XAVJKyklq"
         ></div>
-        <br> -->
+        <br>
         </form> 
 </body>
 </html>   
