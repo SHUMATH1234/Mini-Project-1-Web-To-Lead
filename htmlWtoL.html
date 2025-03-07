@@ -5,37 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web To Lead From</title>
     <link rel="stylesheet" href="style.css">
-    <script src="js0.js"></script>
+    <script src="js11.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
         <h1>Create Lead</h1>
-        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DdL00000F5Ba5" method="POST" onsubmit=" beforeSubmit(event)">
+        <form 
+        action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DdL00000F5Ba5" 
+        method="POST" 
+        onsubmit="beforeSubmit()"
+        >
          
-        <input type=hidden name='captcha_settings' value='{"keyname":"WebToLead","fallback":"true","orgId":"00DdL00000F5Ba5","ts":""}'>
-        <input type=hidden name="oid" value="00DdL00000F5Ba5">
-        <input type=hidden name="retURL" value="https://shumath1234.github.io/Mini-Project-1-Web-To-Lead/HTML.HTML" />
+        <input 
+        type=hidden 
+        name='captcha_settings' 
+        value='{"keyname":"WebToLead","fallback":"true","orgId":"00DdL00000F5Ba5","ts":""}'
+        >
+        <input type=hidden name="oid" value="00DdL00000F5Ba5"
+        />
+        <input 
+        type=hidden 
+        name="retURL" 
+        value=""
+        />
         
         <input type=hidden name="Lead_Date__c" class="outputData" />
 
-        <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br />
+        <label for="first_name">First Name</label
+            ><input  
+            id="first_name" 
+            maxlength="40" 
+            name="first_name" 
+            size="20" 
+            type="text" 
+            /><br />
         
-        <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br />
+        <label for="last_name">Last Name</label
+            ><input  
+            id="last_name" 
+            maxlength="80" 
+            name="last_name" 
+            size="20" 
+            type="text" 
+            /><br />
         
-        <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br />
+        <label for="email">Email</label
+            ><input  
+            id="email" 
+            maxlength="80" 
+            name="email" 
+            size="20" 
+            type="text" 
+            /><br />
         
         <label for="email">Lead Data</label>
         <input type="date" class="inputDate" />
         <!--Lead Date:<span class="dateInput dateOnlyInput"><input  id="00NdL00000ME4Le" name="00NdL00000ME4Le" size="12" type="text" /></span><br>-->
         
-        <input type="submit" name="submit" class="submit" /> 
-
         <div 
         class="g-recaptcha" 
         data-call="captchaSuccess"
-        data-sitekey="6LfsO-wqAAAAANQ-BxXmDSenmpblZV3XAVJKyklq"
+        data-sitekey="6LeVgOwqAAAAANxB6NTPIAgn_OKSIPR3ASexPdws"
         ></div>
         <br>
+        <input type="submit" name="submit" class="submit">
         </form> 
 </body>
 </html>   
