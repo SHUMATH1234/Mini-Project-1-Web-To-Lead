@@ -1,17 +1,17 @@
 let captchaCheck = false;
 function beforeSubmit(event){
-if(captchaCheck){
+//if(captchaCheck){
     let outputDate = document.querySelector(".outputData");
     let inputDate = document.querySelector(".inputDate");
     console.log("inputDate.value", inputDate.value);
 
     let formattedDate = new Date(inputDate.value).toLocaleDateString("en-IN");
     outputDate.value = formattedDate;
- }else{
-    alert("Please check the reCaptcha Box to Submit the Lead");
-     event.preventDefault();
- }
- 
+// }else{
+ //  alert("Please check the reCaptcha Box to Submit the Lead");
+ //    event.preventDefault();
+// }
+
 
 }
 
